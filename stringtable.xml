@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="Roadblock">
+    <Key ID="STR_Roadblock_Interact">
+        <English>Interact</English>
+        <German>Interagieren</German>
+    </Key>
+    <Key ID="STR_Roadblock_GetOut">
+        <English>Get Out</English>
+        <German>Aussteigen</German>
+    </Key>
+    <Key ID="STR_Roadblock_Drive">
+        <English>Drive on</English>
+        <German>Weiterfahren</German>
+    </Key>
+</Project>
