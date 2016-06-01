@@ -16,10 +16,17 @@ class EditorData
 	};
 	class Camera
 	{
+<<<<<<< HEAD
 		pos[]={3833.2896,369.78506,3665.3955};
 		dir[]={0.18543012,-0.54762524,-0.81605721};
 		up[]={0.12145077,0.83637792,-0.53446394};
 		aside[]={-0.9752509,1.2193159e-006,-0.22160359};
+=======
+		pos[]={4186.0518,1516.5664,2656.6523};
+		dir[]={-0.10835563,-0.87297213,0.47582558};
+		up[]={-0.19387962,0.4873631,0.851363};
+		aside[]={0.97514802,8.5443025e-007,0.22206287};
+>>>>>>> origin/master
 	};
 };
 binarizationWanted=0;
@@ -57,7 +64,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=24;
 		class Item0
 		{
 			className="A3_Data_F_Curator";
@@ -93,86 +100,112 @@ class AddonsMetaData
 		};
 		class Item5
 		{
+			className="ace_realisticnames";
+			name="ace_realisticnames";
+		};
+		class Item6
+		{
 			className="A3_Static_F";
 			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item6
+		class Item7
+		{
+			className="ace_vehicles";
+			name="ace_vehicles";
+		};
+		class Item8
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item7
+		class Item9
 		{
 			className="CUP_CABuildings2_Misc_Cargo";
 			name="CUP_CABuildings2_Misc_Cargo";
 		};
-		class Item8
+		class Item10
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item9
+		class Item11
+		{
+			className="ace_dragging";
+			name="ace_dragging";
+		};
+		class Item12
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item10
+		class Item13
+		{
+			className="ace_sitting";
+			name="ace_sitting";
+		};
+		class Item14
+		{
+			className="r_unfold";
+			name="r_unfold";
+			author="Rallen";
+		};
+		class Item15
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item16
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item12
+		class Item17
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item18
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item19
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item15
+		class Item20
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item16
+		class Item21
 		{
 			className="CUP_CAMisc_ACR_Container";
 			name="CUP_CAMisc_ACR_Container";
 		};
-		class Item17
+		class Item22
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted features";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item18
+		class Item23
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
