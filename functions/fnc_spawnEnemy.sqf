@@ -1,5 +1,8 @@
 private ["_randMarker","_value","_group","_bool1"];
 
+_randTime = random [120,160,200];
+
+sleep(1+_randTime);
 
 //Enemy spawning at random markers placed on the map
 _randMarker = selectRandom ["enemyMarker_1","enemyMarker_2","enemyMarker_3","enemyMarker_4","enemyMarker_5"];
