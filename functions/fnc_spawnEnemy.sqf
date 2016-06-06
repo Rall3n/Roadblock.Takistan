@@ -1,20 +1,41 @@
-private ["_randMarker","_value","_group","_bool1"];
+private ["_randMarker","_value","_bool1","_randTime"];
 
-_randTime = random [120,160,200];
+//Random Timer before the first wave (hint to warn the players)
+//_randTime = random [120,160,200];
 
-sleep(1+_randTime);
+hint "Ihr habt ca. 2-3 Minuten, bevor der erste Angriff stattfindet.";
+
+//sleep(1+_randTime);
 
 //Enemy spawning at random markers placed on the map
 _randMarker = selectRandom ["enemyMarker_1","enemyMarker_2","enemyMarker_3","enemyMarker_4","enemyMarker_5"];
 
-//Value to define how much enemies are spawning
-_value = selectRandom [1,2,3,4,5];
+//Random amount of enemies are placed on the position defined before
+_testGroup = [markerPos _randMarker, east, enemies, [], [], [], [], [1,0.5], []] call BIS_fnc_spawnGroup;
 
-//Random amount of enemies and random position placed within a group
-_group = [markerPos _randMarker, east, enemies, [], [], [], [], _value, []] call BIS_fnc_spawnGroup;
+_target = allPlayers call BIS_fnc_selectRandom;
 
 //Spawned group gets the task to attack the roadblock
-_bool1 = [_group, markerPos "attackPos"] call BIS_fnc_taskAttack;
+[_testGroup,"attackRoadblock","Attack the Roadblock",_target,true,0,true,"Attack",false] call BIS_fnc_taskCreate;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Planned:
 Random timer between attacks
