@@ -1,4 +1,4 @@
-private ["_randMarker","_value","_bool1","_randTime"];
+private ["_randMarker","_value","_bool1","_randTime","_attackSuccess"];
 
 //Random Timer before the first wave (hint to warn the players)
 //_randTime = random [120,160,200];
@@ -13,10 +13,23 @@ _randMarker = selectRandom ["enemyMarker_1","enemyMarker_2","enemyMarker_3","ene
 //Random amount of enemies are placed on the position defined before
 _testGroup = [markerPos _randMarker, east, enemies, [], [], [], [], [1,0.5], []] call BIS_fnc_spawnGroup;
 
-_target = allPlayers call BIS_fnc_selectRandom;
-
 //Spawned group gets the task to attack the roadblock
-[_testGroup,"attackRoadblock","Attack the Roadblock",_target,true,0,true,"Attack",false] call BIS_fnc_taskCreate;
+[_testGroup,"attackRoadblock","",testUnit,1,1,true] call BIS_fnc_taskCreate;
+_testGroup move position player;
+
+_attackSuccess = "attackRoadblock" call BIS_fnc_taskCompleted;
+
+while {!_attackSuccess} do
+{
+	_attackSuccess = "attackRoadblock" call BIS_fnc_taskCompleted;
+	hint "noch nicht";
+};
+
+hint "Getötet!";
+
+
+
+
 
 
 
